@@ -50,27 +50,30 @@ app.get('/start', function (req, res) {
     console.log('Повторен опит за дете: ' + newEntry + ' със задание: ' + spisak[newEntry]);
   }
   console.log(spisak);
-  fs.appendFile('tests/' + newEntry + '.txt', spisak[newEntry], function (err) {
-    if (err) {
-      console.log(err);
-      delete spisak[newEntry];
-      res.status(400).send({
-        message: 'Не можахме да те запишем',
-      });
-      return;
-    }
+  // fs.appendFile('tests/' + newEntry + '.txt', spisak[newEntry], function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //     delete spisak[newEntry];
+  //     res.status(400).send({
+  //       message: 'Не можахме да те запишем',
+  //     });
+  //     return;
+  //   }
 
-    // var file = fs.createReadStream(__dirname + '/blanki/' + spisak[newEntry]);
-    // var stat = fs.statSync(__dirname + '/blanki/' + spisak[newEntry]);
-    // res.setHeader('Content-Length', stat.size);
-    // res.setHeader('Content-Type', 'application/pdf');
-    // res.setHeader('Content-Disposition', 'attachment; filename=kontrolno.pdf');
-    // file.pipe(res);
+  //   // var file = fs.createReadStream(__dirname + '/blanki/' + spisak[newEntry]);
+  //   // var stat = fs.statSync(__dirname + '/blanki/' + spisak[newEntry]);
+  //   // res.setHeader('Content-Length', stat.size);
+  //   // res.setHeader('Content-Type', 'application/pdf');
+  //   // res.setHeader('Content-Disposition', 'attachment; filename=kontrolno.pdf');
+  //   // file.pipe(res);
 
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.write('/blanki/' + spisak[newEntry]);
-    res.end();
-  });
+  //   res.writeHead(200, { 'Content-Type': 'text/plain' });
+  //   res.write('/blanki/' + spisak[newEntry]);
+  //   res.end();
+  // });
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.write('/blanki/' + spisak[newEntry]);
+  res.end();
 });
 
 app.get('/domashno', function (req, res) {
