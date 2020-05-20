@@ -2,6 +2,35 @@
   text-align: center;
 }
 
+p {
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type='submit'],
+button {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}
+.MuiMenuItem-root {
+  min-width: 200px;
+}
+p.error {
+  color: #f44336;
+}
+
+a {
+  font-size: 12px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,25 +43,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linkCopyHelp {
+  font-size: 16px;
+}
+
+.linkCopyHelp a {
+  font-size: 18px;
 }
