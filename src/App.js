@@ -31,7 +31,7 @@ function App() {
     }
     setIsLoading(true);
     setError('');
-    const response = await fetch('/domashno?ime=' + name + '&nomer=' + number + '&klass=' + classNumber, {
+    const response = await fetch('/start?ime=' + name + '&nomer=' + number + '&klass=' + classNumber, {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
