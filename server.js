@@ -32,10 +32,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');
 });
 
-app.get('/domashno', (req, res) => {
-  res.sendFile(__dirname + '/build/domashno.html');
-});
-
 app.use('/static/css', express.static(path.join(__dirname, '/build/static/css')));
 app.use('/static/js', express.static(path.join(__dirname, '/build/static/js')));
 app.use('/blanki', express.static(path.join(__dirname, '/blanki')));
@@ -101,7 +97,7 @@ app.get('/domashno', function (req, res) {
     }
 
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.write('/blanki/' + spisak[newEntry]);
+    res.write('/domashno/' + spisak[newEntry]);
     res.end();
   });
 });
