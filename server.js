@@ -86,16 +86,16 @@ app.get('/domashno', function (req, res) {
     console.log('Повторен опит за дете: ' + newEntry + ' със задание: ' + spisak[newEntry]);
   }
   console.log(spisak);
-  fs.appendFile('tests/' + newEntry + '.txt', spisak[newEntry], function (err) {
-    if (err) {
-      console.log(err);
-      delete spisak[newEntry];
-      res.status(400).send({
-        message: 'Не можахме да те запишем',
-      });
-      return;
-    }
-  });
+  // fs.appendFile('tests/' + newEntry + '.txt', spisak[newEntry], function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //     delete spisak[newEntry];
+  //     res.status(400).send({
+  //       message: 'Не можахме да те запишем',
+  //     });
+  //     return;
+  //   }
+  // });
 
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.write('/domashno/' + spisak[newEntry]);
