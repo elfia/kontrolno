@@ -57,8 +57,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Тестът приключи!</p>
-        {/* <p>
+        {/* <p>Тестът приключи!</p> */}
+        <p>
           <TextField
             id="name"
             label="Въведете двете си имена"
@@ -83,7 +83,9 @@ function App() {
               }}
               label="Изберете Клас"
             >
-              <MenuItem value="9a">9a</MenuItem>
+              <MenuItem value="7a">7a</MenuItem>
+              <MenuItem value="7б">7б</MenuItem>
+              <MenuItem value="7в">7в</MenuItem>
             </Select>
           </FormControl>
         </p>
@@ -125,7 +127,7 @@ function App() {
               Започни
             </Button>
           </>
-        )} */}
+        )}
       </header>
     </div>
   );
