@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 git pull --tags origin master
 
-npm run build
+npm install -> npm run build
+
+//za dev - export PORT=8080 && node server.js
 
 gcloud app deploy
 
