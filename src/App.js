@@ -18,7 +18,7 @@ function App() {
 
   const submit = async () => {
     if (name.length < 2) {
-      setError('Въведете двете имена');
+      setError('Въведете първото си име');
       return;
     }
     if (classNumber.length < 1) {
@@ -57,16 +57,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Тестът приключи!</p>
-        {/* <p>
+        {/* <p>Тестът приключи!</p> */}
+        <p>
           <TextField
             id="name"
-            label="Въведете двете си имена"
+            label="Въведете само първо име (без фамилията)"
             required
             variant="outlined"
             value={name}
             fullWidth
-            error={error == 'Въведете двете имена' ? true : false}
+            error={error == 'Въведете първото си име' ? true : false}
             onInput={(e) => setName(e.target.value)}
           />
         </p>
@@ -127,7 +127,7 @@ function App() {
               Започни
             </Button>
           </>
-        )} */}
+        )}
       </header>
     </div>
   );
