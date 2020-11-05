@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+git clone https://github.com/elfia/kontrolno
+
 git pull --tags origin master
 
 npm install -> npm run build
