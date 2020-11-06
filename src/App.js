@@ -57,8 +57,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <p>Тестът приключи!</p> */}
-        <p>
+        <p>Тестът приключи!</p>
+        {/* <p>
           <TextField
             id="name"
             label="Въведете само първо име (без фамилията)"
@@ -125,7 +125,7 @@ function App() {
               Започни
             </Button>
           </>
-        )}
+        )} */}
       </header>
     </div>
   );
