@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Тестът приключи!</p>
+        {/* <p>Тестът приключи!</p> */}
         <p>
           <TextField
             id="name"
