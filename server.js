@@ -29,7 +29,7 @@ app.use('/static/js', express.static(path.join(__dirname, '/build/static/js')));
 app.use('/blanki', express.static(path.join(__dirname, '/blanki')));
 
 app.get('/start', function (req, res) {
-  const newEntry = (req.query.klass + '_' + req.query.ime + '_' + req.query.nomer).toLowerCase();
+  const newEntry = (req.query.klass + '_' + req.query.ime.trim() + '_' + req.query.nomer).toLowerCase();
   if (!spisak[newEntry]) {
     spisak[newEntry] = kontrolnoBlanki[current];
     current++;

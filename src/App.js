@@ -21,6 +21,10 @@ function App() {
       setError('Въведете първото си име');
       return;
     }
+    if (name.trim().split(" ").length > 1) {
+      setError('Въведете само първото си име без фамилия');
+      return;
+    }
     if (classNumber.length < 1) {
       setError('Изберете клас');
       return;
@@ -57,8 +61,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Тестът приключи!</p>
-        {/* <p>
+        {/* <p>Тестът приключи!</p> */}
+        <p>
           <TextField
             id="name"
             label="Въведете само първо име (без фамилията)"
@@ -66,12 +70,12 @@ function App() {
             variant="outlined"
             value={name}
             fullWidth
-            error={error == 'Въведете първото си име' ? true : false}
+            error={(error == 'Въведете първото си име' || error == "Въведете само първото си име без фамилия")}
             onInput={(e) => setName(e.target.value)}
           />
         </p>
         <p>
-          <FormControl variant="outlined" error={error == 'Изберете клас' ? true : false}>
+          <FormControl variant="outlined" error={error == 'Изберете клас'}>
             <InputLabel id="demo-simple-select-filled-label">Изберете Клас</InputLabel>
             <Select
               autoWidth
@@ -96,7 +100,7 @@ function App() {
             fullWidth
             value={number}
             type="number"
-            error={error == 'Въведете правилно номера в класа' ? true : false}
+            error={error == 'Въведете правилно номера в класа'}
             onInput={(e) => setNumber(e.target.value)}
           />
         </p>
@@ -125,7 +129,7 @@ function App() {
               Започни
             </Button>
           </>
-        )} */}
+        )}
       </header>
     </div>
   );
