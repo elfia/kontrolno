@@ -42,7 +42,6 @@ function App() {
       credentials: 'same-origin', // include, *same-origin, omit
       headers: {
         'Content-Type': 'application/json',
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       redirect: 'follow', // manual, *follow, error
       referrerPolicy: 'no-referrer', // no-referrer, *client
@@ -50,9 +49,7 @@ function App() {
     if (response.status >= 400) {
       setError('Нещо се обърка, пробвай пак. Ако видиш това съобщение отново пиши на г-жата');
     } else {
-      // const text = await response.blob();
       const text = await response.text();
-      // openDownloadLink(text);
       window.location.href = text;
       setIsLoading(false);
       setDownloadUrl(text);
@@ -113,10 +110,6 @@ function App() {
           <>
             <h2>Успех!</h2>
             <a
-              // onClick={(e) => {
-              //   e.preventDefault();
-              //   openDownloadLink(downloadUrl);
-              // }}
               href={downloadUrl}
             >
               Изчакайте, свалянето ще започне след секунди, Ако свалянето не започне автоматично цъкнете тук.
