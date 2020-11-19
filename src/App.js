@@ -84,7 +84,7 @@ function App() {
               }}
               label="Изберете Клас"
             >
-              <MenuItem value="10a">10a</MenuItem>
+              <MenuItem value="9a">9a</MenuItem>
             </Select>
           </FormControl>
         </p>
