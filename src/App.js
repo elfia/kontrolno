@@ -21,7 +21,7 @@ function App() {
       setError('Въведете първото си име');
       return;
     }
-    if (name.trim().split(" ").length > 1) {
+    if (name.trim().split(' ').length > 1) {
       setError('Въведете само първото си име без фамилия');
       return;
     }
@@ -67,7 +67,7 @@ function App() {
             variant="outlined"
             value={name}
             fullWidth
-            error={(error == 'Въведете първото си име' || error == "Въведете само първото си име без фамилия")}
+            error={error == 'Въведете първото си име' || error == 'Въведете само първото си име без фамилия'}
             onInput={(e) => setName(e.target.value)}
           />
         </p>
@@ -84,8 +84,7 @@ function App() {
               }}
               label="Изберете Клас"
             >
-              <MenuItem value="7a">7a</MenuItem>
-              <MenuItem value="7б">7б</MenuItem>
+              <MenuItem value="7a">10a</MenuItem>
             </Select>
           </FormControl>
         </p>
@@ -110,11 +109,7 @@ function App() {
         ) : downloadUrl ? (
           <>
             <h2>Успех!</h2>
-            <a
-              href={downloadUrl}
-            >
-              Изчакайте, свалянето ще започне след секунди, Ако свалянето не започне автоматично цъкнете тук.
-            </a>
+            <a href={downloadUrl}>Изчакайте, свалянето ще започне след секунди, Ако свалянето не започне автоматично цъкнете тук.</a>
           </>
         ) : (
           <>
