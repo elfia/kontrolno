@@ -2,10 +2,6 @@
   "name": "kontrolno",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
   "dependencies": {
     "@babel/core": "7.9.0",
     "@google-cloud/datastore": "^6.3.0",
