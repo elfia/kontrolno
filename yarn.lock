@@ -2890,10 +2890,10 @@
     "lodash.memoize" "^4.1.2"
     "lodash.uniq" "^4.5.0"
 
-"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30000981", "caniuse-lite@^1.0.30001035", "caniuse-lite@^1.0.30001038", "caniuse-lite@^1.0.30001039":
-  "integrity" "sha512-z7qztybA2eFZTB6Z3yvaQBIoJpQtsewRD74adw2UbRWwsRq3jIPvgrQGawBMbfafekQaD21FWuXNcywtTDGGCw=="
-  "resolved" "https://packages.botronsoft.com/repository/npm-public/caniuse-lite/-/caniuse-lite-1.0.30001156.tgz"
-  "version" "1.0.30001156"
+"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30000981", "caniuse-lite@^1.0.30001035", "caniuse-lite@^1.0.30001038", "caniuse-lite@^1.0.30001039", "caniuse-lite@^1.0.30001282":
+  "integrity" "sha512-YhF/hG6nqBEllymSIjLtR2iWDDnChvhnVJqp+vloyt2tEHFG1yBR+ac2B/rOw0qOK0m0lEXU2dv4E/sMk5P9Kg=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001282.tgz"
+  "version" "1.0.30001282"
 
 "capture-exit@^2.0.0":
   "integrity" "sha512-PiT/hQmTonHhl/HFGN+Lx3JJUznrVYJ3+AQsnthneZbvW7x+f08Tk7yLJTLEOUvBTbduLeeBkxEaYXUOUrRq6g=="
@@ -5458,10 +5458,10 @@
     "relateurl" "^0.2.7"
     "terser" "^4.6.3"
 
-"html-webpack-plugin@4.0.0-beta.11":
-  "integrity" "sha512-4Xzepf0qWxf8CGg7/WQM5qBB2Lc/NFI7MhU59eUDTkuQp3skZczH4UA1d6oQyDEIoMDgERVhRyTdtUPZ5s5HBg=="
-  "resolved" "https://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-4.0.0-beta.11.tgz"
-  "version" "4.0.0-beta.11"
+"html-webpack-plugin@4.0.1":
+  "integrity" "sha512-L6JkRGdvcZcA/zYbELcGvdQKAPtH8mfRE7R5u9/9kXZlZyhteQoae43XPfRS9QEIrMGU/myoRT3X4Ysw1ISyfw=="
+  "resolved" "https://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-4.0.1.tgz"
+  "version" "4.0.1"
   dependencies:
     "html-minifier-terser" "^5.0.1"
     "loader-utils" "^1.2.3"
